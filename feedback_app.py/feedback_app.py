@@ -41,7 +41,7 @@ def auto_reply(sentiment):
 def send_email(subject, body):
     sender_email = "anuja9feb@gmail.com"
     receiver_email = "anuja9feb@gmail.com"
-    password = "your_16_digit_app_password_here"  # <-- paste your real app password here
+    password = "ebdo jhyk qjju fczx"  # <-- paste your real app password here
 
     msg = MIMEText(body)
     msg["Subject"] = subject
