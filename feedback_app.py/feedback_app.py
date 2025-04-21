@@ -76,13 +76,13 @@ st.markdown("This AI tool analyzes feedback, detects sentiment, generates a repl
 user_name = st.text_input("👤 Your Name")
 feedback = st.text_area("✍️ Enter your feedback here")
 
-if st.button("Generate AI Reply and Send Email"):
+if st.button("Submit"):
     if feedback.strip() and user_name.strip():
         sentiment = analyze_sentiment(feedback)
         reply = auto_reply(sentiment)
 
         st.success(f"🤖 Sentiment: {sentiment}")
-        st.info(f"📩 Auto-Reply: {reply}")
+        st.info(f"📩: {reply}")
 
         # Prepare email body
         email_body = f"""📥 New Feedback Received:
