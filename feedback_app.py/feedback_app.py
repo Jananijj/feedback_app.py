@@ -56,11 +56,11 @@ def send_email(subject, body):
 
 # Streamlit UI
 st.title("💬 AI Feedback Response System for IT Services")
-st.markdown("This system accepts feedback from clients or users, analyzes it using AI, and generates a professional auto-reply. You will also receive an email notification of the feedback and response.")
+st.markdown(" Please share your feedback.")
 
 feedback = st.text_area("📝 Enter feedback here:")
 
-if st.button("Generate AI Reply & Send Email"):
+if st.button("Submit"):
     if feedback.strip():
         sentiment = analyze_sentiment(feedback)
         reply = auto_reply(sentiment)
